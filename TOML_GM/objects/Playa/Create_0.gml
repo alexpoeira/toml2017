@@ -1,0 +1,11 @@
+hsp = 0;
+vsp = 0;
+grv = 0.5;
+jumpforce = -5;
+movespeed = 4;
+shiftspeed = 5;
+spriteIndex = playaBaby;
+alarmIndex = 0;
+timeStop = false;
+alarmTime = 0;
+alarm[0] = room_speed * 2;
