@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "842f9dc7-d3a9-492b-8182-4d4d27a6b6f0",
+            "Value": {
+                "id": "0fc043f7-7d99-4926-83f1-a2538e28d0ac",
+                "resourcePath": "sprites\\babyCrawl\\babyCrawl.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "863283df-be9a-4aa7-af56-7711bd120370",
             "Value": {
                 "id": "4faae34c-9c78-466e-a598-c9a52110b4af",

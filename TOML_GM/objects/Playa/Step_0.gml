@@ -13,13 +13,16 @@ else
 
 vsp = vsp + grv;
 if(place_meeting(x,y+1,oWall)){
-	if(key_space)
+	if(key_space){
 		vsp = jumpforce;
+	}
 }
 
 
 //Horizontal Collisions
 if(place_meeting(x+hsp,y,oWall)){
+	if(place_meeting(x,y+1,oWall))
+		vsp += -1;
 	while(!place_meeting(x+sign(hsp),y,oWall))
 	{
 		x = x + sign(hsp);
@@ -56,5 +59,6 @@ if(!place_meeting(x,y+1,oWall)){
 else{
 	image_speed = 1;
 	sprite_index = spriteIndex;
-}	
+}
+
 if(hsp!= 0) image_xscale = sign(hsp);
