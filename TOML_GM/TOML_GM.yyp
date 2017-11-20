@@ -191,14 +191,6 @@
             }
         },
         {
-            "Key": "8971d6b6-63bf-4519-8275-5fc9f4922a21",
-            "Value": {
-                "id": "6ce5888f-16b6-413b-9660-a1296ee8724f",
-                "resourcePath": "sprites\\oldClimb\\oldClimb.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "8c9d4b9a-10f2-4046-8602-ff9120ba94b2",
             "Value": {
                 "id": "8f204bd6-965f-46af-b020-b9bf69deb165",
@@ -228,14 +220,6 @@
                 "id": "bc535927-3aa1-46b5-bac7-ea30177bbdbd",
                 "resourcePath": "sprites\\sprite2\\sprite2.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "a94d5b2a-d40e-4b57-919d-581d66027a51",
-            "Value": {
-                "id": "eeb30175-bf0e-411e-9ab5-f78e41412fb0",
-                "resourcePath": "views\\a94d5b2a-d40e-4b57-919d-581d66027a51.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
