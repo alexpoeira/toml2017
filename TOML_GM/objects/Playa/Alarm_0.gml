@@ -1,5 +1,5 @@
 spriteIndex=playaChild;
-jumpforce = -17;
+jumpforce = -12;
 shiftspeed = 10;
 alarmIndex = 1;
 movespeed = 4;

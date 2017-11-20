@@ -7,3 +7,7 @@ if(spriteIndex == babyCrawl){
 	}
 	crawlingUnder = true;
 }
+
+if(spriteIndex == oldClimb)
+	spriteIndex = playaOld;
+	
