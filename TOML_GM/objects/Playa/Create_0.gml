@@ -9,4 +9,5 @@ alarmIndex = 0;
 timestop = false;
 alarmTime = 0;
 crawlingUnder = false;
+timeSinceAttack = 0;
 alarm[0] = room_speed * 2;
