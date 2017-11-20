@@ -19,7 +19,7 @@ if(place_meeting(x,y+1,oWall)){
 	}
 }
 
-
+timeSinceAttack += delta_time;
 //Horizontal Collisions
 if(place_meeting(x+hsp,y,oWall)){
 	while(!place_meeting(x+sign(hsp),y,oWall))
