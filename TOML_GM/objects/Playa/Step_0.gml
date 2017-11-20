@@ -13,6 +13,7 @@ else
 
 vsp = vsp + grv;
 if(place_meeting(x,y+1,oWall)){
+	doubleJump = true;
 	if(key_space){
 		vsp = jumpforce;
 	}
@@ -21,8 +22,6 @@ if(place_meeting(x,y+1,oWall)){
 
 //Horizontal Collisions
 if(place_meeting(x+hsp,y,oWall)){
-	if(place_meeting(x,y+1,oWall))
-		vsp += -1;
 	while(!place_meeting(x+sign(hsp),y,oWall))
 	{
 		x = x + sign(hsp);
@@ -50,6 +49,7 @@ y = y + vsp;
 if(!place_meeting(x,y+1,oWall)){
 	sprite_index = childFall;
 	image_speed = 0;
+	mask_index = spriteIndex;
 	if(sign(vsp) >0)
 		image_index = 0;
 	else
@@ -59,6 +59,16 @@ if(!place_meeting(x,y+1,oWall)){
 else{
 	image_speed = 1;
 	sprite_index = spriteIndex;
+	mask_index = spriteIndex;
 }
 
-if(hsp!= 0) image_xscale = sign(hsp);
+if(hsp!= 0) image_xscale = sign(hsp)
+
+if(spriteIndex == babyCrawl && crawlingUnder == true){
+	if(!place_meeting(x,y-sprite_height,oWall)){
+		spriteIndex = playaBaby;
+		movespeed = 4;
+		vsp -=3;
+		crawlingUnder = false;
+	}
+}
