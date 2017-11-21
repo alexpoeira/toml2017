@@ -4,7 +4,7 @@ if(timestop){
 	spriteIndex = playaOld;
 	jumpforce = -10;
 	shiftspeed = 5;
-	alarmIndex = 0;
+	alarmIndex = 3;
 	movespeed = 4;
 	vsp -=3;
 }

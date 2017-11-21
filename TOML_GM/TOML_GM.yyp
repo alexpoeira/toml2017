@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "3c1b1748-c96b-480f-8dbb-98e8e8498fda",
+            "Value": {
+                "id": "ed7be2ff-2dc4-4170-937c-a76fa082ba76",
+                "resourcePath": "sprites\\oldClimb\\oldClimb.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3c67ceac-6a57-418c-bafb-63776b4eff45",
             "Value": {
                 "id": "e0d1910f-972a-4f29-a324-7d30a35662ce",

@@ -2,6 +2,7 @@ key_left = keyboard_check(vk_left);
 key_right = keyboard_check(vk_right);
 key_space = keyboard_check(vk_space);
 key_shift = keyboard_check(vk_lshift);
+key_z = keyboard_check(ord("Z"));
 
 //Horizontal Movement
 var move = key_right - key_left;
@@ -38,7 +39,6 @@ if(place_meeting(x,y+vsp,oWall)){
 		y = y + sign(vsp);
 	}
 	vsp = 0;
-
 }
 
 
@@ -64,6 +64,7 @@ else{
 
 if(hsp!= 0) image_xscale = sign(hsp)
 
+//special cases
 if(spriteIndex == babyCrawl && crawlingUnder == true){
 	if(!place_meeting(x,y-sprite_height,oWall)){
 		spriteIndex = playaBaby;
@@ -72,3 +73,6 @@ if(spriteIndex == babyCrawl && crawlingUnder == true){
 		crawlingUnder = false;
 	}
 }
+
+if(place_meeting(x,y+1,oWall) && spriteIndex == oldClimb)
+	spriteIndex = playaOld;

@@ -6,7 +6,7 @@ if(timestop == false){
 		sprite_index = wall;
 }else{
 		timestop = false;
-		if(alarmTime == pointer_null)
+		if(alarmTime != pointer_null)
 			alarm_set(alarmIndex, alarmTime);
 		else if(alarmIndex < 2)
 			alarm_set(alarmIndex, 2);

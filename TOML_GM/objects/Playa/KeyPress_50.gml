@@ -2,7 +2,7 @@
 if(timestop){
 	sprite_index = playaChild;
 	spriteIndex = playaChild;
-	jumpforce = -18;
+	jumpforce = -12;
 	shiftspeed = 10;
 	alarmIndex = 1;
 	movespeed = 4;
