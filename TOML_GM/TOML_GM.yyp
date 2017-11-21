@@ -119,6 +119,22 @@
             }
         },
         {
+            "Key": "3a3f82d7-a3ea-4d3f-8dab-784693352604",
+            "Value": {
+                "id": "3e5e5406-c3fe-4691-9e7f-1d9231706681",
+                "resourcePath": "objects\\ninja\\ninja.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3b70108a-6945-45e0-9c44-830806f110fa",
+            "Value": {
+                "id": "2bc60f84-db24-45f4-8246-bb1e3782d46a",
+                "resourcePath": "rooms\\room3\\room3.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "3c1b1748-c96b-480f-8dbb-98e8e8498fda",
             "Value": {
                 "id": "ed7be2ff-2dc4-4170-937c-a76fa082ba76",
@@ -135,6 +151,30 @@
             }
         },
         {
+            "Key": "42dd5c03-5229-4b05-a2e3-00a5fd89718e",
+            "Value": {
+                "id": "e62d0074-4201-431f-a853-69dae0493f7d",
+                "resourcePath": "sprites\\sprite11\\sprite11.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "48c41e94-d5d3-4234-bb2e-272059ef6a4a",
+            "Value": {
+                "id": "1010ad70-e62d-4755-be7a-e014c054bd2a",
+                "resourcePath": "sprites\\sprite16\\sprite16.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4c714980-4e4a-4de3-a0be-6fce934755e5",
+            "Value": {
+                "id": "16872fcb-c302-4429-b60c-86d9929f86dc",
+                "resourcePath": "sprites\\enemyBat\\enemyBat.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "545e9430-567b-4140-836b-cd4a716f3900",
             "Value": {
                 "id": "cb7de1d0-273c-4fa4-a575-c94e739a3890",
@@ -143,11 +183,35 @@
             }
         },
         {
+            "Key": "5517932b-8283-4f39-aedb-7c5be2d49530",
+            "Value": {
+                "id": "b825c4cf-fbcf-4101-ae8f-c2ab5e473b87",
+                "resourcePath": "objects\\object6\\object6.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "571083b0-f0e8-43eb-a08e-145dc97718cc",
+            "Value": {
+                "id": "4c12070b-ea2d-47e8-81ac-0d230ebab777",
+                "resourcePath": "objects\\bullet\\bullet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5d4a47e9-db87-40ee-84e0-9957726b2899",
             "Value": {
                 "id": "2f91d54a-dfa4-4b5f-a0f4-af4edcc097d7",
                 "resourcePath": "objects\\Box\\Box.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6cef69ad-162f-41ba-95dc-b8c82265e301",
+            "Value": {
+                "id": "715526c1-3e41-4b69-a98a-fb633b3dbe00",
+                "resourcePath": "sprites\\playaAttack\\playaAttack.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -183,6 +247,14 @@
             }
         },
         {
+            "Key": "7dfe237c-31d4-43f9-ba58-aa42a2f89bb4",
+            "Value": {
+                "id": "ac9480b4-beed-438a-a6da-0e85ddb8d66e",
+                "resourcePath": "objects\\EnemyFaster\\EnemyFaster.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "842f9dc7-d3a9-492b-8182-4d4d27a6b6f0",
             "Value": {
                 "id": "0fc043f7-7d99-4926-83f1-a2538e28d0ac",
@@ -199,11 +271,27 @@
             }
         },
         {
+            "Key": "8c026c22-826f-43c6-8c4c-ba0c2afc1fbd",
+            "Value": {
+                "id": "22718b89-66dc-40c3-b6d9-880a66725dae",
+                "resourcePath": "sprites\\ninjaFall\\ninjaFall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8c9d4b9a-10f2-4046-8602-ff9120ba94b2",
             "Value": {
                 "id": "8f204bd6-965f-46af-b020-b9bf69deb165",
                 "resourcePath": "views\\8c9d4b9a-10f2-4046-8602-ff9120ba94b2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8cdbc2d9-ba18-4456-a788-2a523f65618e",
+            "Value": {
+                "id": "61391706-c5c5-4403-9717-2b5450cd7700",
+                "resourcePath": "sprites\\sprite17\\sprite17.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -220,6 +308,22 @@
                 "id": "c37e86bb-f67b-4493-b2a8-6cfc04ac84d4",
                 "resourcePath": "views\\95e3cd69-bf13-4828-ae81-3f52be71d399.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "98e67fe9-57ae-4392-bf63-a2f7827dbd24",
+            "Value": {
+                "id": "9b6b9098-e186-4399-a8d6-8e142c983a52",
+                "resourcePath": "rooms\\room2\\room2.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "9f9bb997-a3f6-4b1e-be7d-3a712c18152a",
+            "Value": {
+                "id": "5004a3dd-5013-4b93-8b70-003c0ba84f19",
+                "resourcePath": "sprites\\ninja_idle\\ninja_idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

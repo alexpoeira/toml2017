@@ -2,7 +2,6 @@ key_left = keyboard_check(vk_left);
 key_right = keyboard_check(vk_right);
 key_space = keyboard_check(vk_space);
 key_shift = keyboard_check(vk_lshift);
-key_z = keyboard_check(ord("Z"));
 
 //Horizontal Movement
 var move = key_right - key_left;
@@ -17,6 +16,7 @@ if(place_meeting(x,y+1,oWall)){
 	doubleJump = true;
 	if(key_space){
 		vsp = jumpforce;
+		iJumped = true;
 	}
 }
 
@@ -47,14 +47,15 @@ y = y + vsp;
 //Animation and Transformation to different characters
 
 if(!place_meeting(x,y+1,oWall)){
-	sprite_index = childFall;
-	image_speed = 0;
+	if(spriteIndex == playaChild){
+		sprite_index = childFall;
+		image_speed = 1;
+		if(sign(vsp) >0)
+			image_index = 0;
+		else
+			image_index = 1;
+	}
 	mask_index = spriteIndex;
-	if(sign(vsp) >0)
-		image_index = 0;
-	else
-		image_index = 1;
-		
 }
 else{
 	image_speed = 1;
@@ -66,13 +67,17 @@ if(hsp!= 0) image_xscale = sign(hsp)
 
 //special cases
 if(spriteIndex == babyCrawl && crawlingUnder == true){
-	if(!place_meeting(x,y-sprite_height,oWall)){
+	if(!place_meeting(x,y-10,oWall)){
 		spriteIndex = playaBaby;
 		movespeed = 4;
-		vsp -=3;
+		vsp -=2;
+		jumpforce = -10;
 		crawlingUnder = false;
 	}
 }
 
 if(place_meeting(x,y+1,oWall) && spriteIndex == oldClimb)
 	spriteIndex = playaOld;
+
+if(timeSinceAttack > 1000000 && spriteIndex == playaAttack)
+	spriteIndex = playaAdult;

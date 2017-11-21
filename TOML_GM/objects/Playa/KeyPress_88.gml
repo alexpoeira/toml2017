@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if(spriteIndex == playaAdult){
-	
+	spriteIndex = playaAttack;
 	if(timeSinceAttack > 1000000){
 		if(image_xscale == 1 && place_meeting(x+40,y,Enemy)){
 		    var enemy =	instance_nearest(x+40, y, Enemy);
