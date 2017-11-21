@@ -1,3 +1,9 @@
+if(Playa.timestop){
+	image_speed = 0;
+	exit;
+}else
+	image_speed = 1;
+
 if(hp == 0) instance_destroy();
 
 if(place_meeting(x+hsp,y,oWall)){

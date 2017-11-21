@@ -5,23 +5,13 @@
     "name": "Box",
     "eventList": [
         {
-            "id": "2e7d8477-ee04-4b88-93de-7a6f18be34d2",
+            "id": "2152792a-e388-44f5-bf99-8d050e12ec23",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "cf03a6d8-a560-4f45-a651-d3a5def12993",
+            "collisionObjectId": "b6211aaf-1fb6-4e8a-9427-dc5183b04a3f",
             "enumb": 0,
             "eventtype": 4,
-            "m_owner": "5d4a47e9-db87-40ee-84e0-9957726b2899"
-        },
-        {
-            "id": "cb787b51-aa21-4b80-a8d1-ce2bd5520ec7",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
             "m_owner": "5d4a47e9-db87-40ee-84e0-9957726b2899"
         }
     ],
@@ -40,7 +30,7 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "solid": false,
+    "solid": true,
     "spriteId": "12e37d1a-aaad-446f-92e7-a0c6a3781b5a",
     "visible": true
 }

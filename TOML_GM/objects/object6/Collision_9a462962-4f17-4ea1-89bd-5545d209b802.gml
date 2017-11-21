@@ -1,4 +1,4 @@
-if(Playa.sprite_index != babyCrawl){
+if(!playaStunned && Playa.sprite_index != babyCrawl){
 	if(Playa.x > x){
 		if(!place_meeting(Playa.x+25,Playa.y-10,oWall))
 			Playa.x += 25;
@@ -6,6 +6,12 @@ if(Playa.sprite_index != babyCrawl){
 
 	else if(!place_meeting(Playa.x-25,Playa.y-10,oWall))
 		Playa.x -= 25;
+		
+		
+		
 	Playa.image_blend = c_red;
 	playaStunned = true;
+	vsp = -vsp;
 }
+
+else vsp = -vsp;

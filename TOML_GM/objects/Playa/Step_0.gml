@@ -1,5 +1,6 @@
 key_left = keyboard_check(vk_left);
 key_right = keyboard_check(vk_right);
+key_up = keyboard_check(vk_up);
 key_space = keyboard_check(vk_space);
 key_shift = keyboard_check(vk_lshift);
 
@@ -12,9 +13,9 @@ else
 	hsp = move * shiftspeed;
 
 vsp = vsp + grv;
-if(place_meeting(x,y+1,oWall)){
+if(place_meeting(x,y+1,oWall) || place_meeting(x,y+1,Box)){
 	doubleJump = true;
-	if(key_space){
+	if(key_space || key_up){
 		vsp = jumpforce;
 		iJumped = true;
 	}
@@ -30,23 +31,29 @@ if(place_meeting(x+hsp,y,oWall)){
 		hsp = 0;
 
 }
+
+else if(place_meeting(x+hsp,y,Box)){
+	if(place_meeting(x,y+1,oWall) && spriteIndex == playaAdult)
+		Box.x += hsp;
+	hsp = 0;
+}
+
 x = x + hsp;
 
 //Vertical Collisions
-if(place_meeting(x,y+vsp,oWall)){
-	while(!place_meeting(x,y+sign(vsp),oWall))
+if(place_meeting(x,y+vsp,oWall) || place_meeting(x,y+vsp,Box)){
+	while(!place_meeting(x,y+sign(vsp),oWall) && !place_meeting(x,y+sign(vsp),Box))
 	{
 		y = y + sign(vsp);
 	}
 	vsp = 0;
 }
 
-
 y = y + vsp;
 
 //Animation and Transformation to different characters
 
-if(!place_meeting(x,y+1,oWall)){
+if(!place_meeting(x,y+1,oWall) && !place_meeting(x,y+1,Box)){
 	if(spriteIndex == playaChild){
 		sprite_index = childFall;
 		image_speed = 1;

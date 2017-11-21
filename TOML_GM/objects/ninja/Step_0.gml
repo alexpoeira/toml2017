@@ -1,3 +1,9 @@
+if(Playa.timestop){
+	image_speed = 0;
+	exit;
+}else
+	image_speed = 1;
+
 vsp = vsp + grv;
 if(place_meeting(x,y+1,oWall)){
 	if(Playa.iJumped){

@@ -1,9 +1,10 @@
 hsp = 1;
 vsp = 0;
-//walked = 0;
-//limit = 400;
-maxHp = 20;
+walked = 0;
+movespeed = 1;
+limit = 4000;
+maxHp = 10;
 hp = maxHp;
-//timeStunned = 0;
+timeStunned = 0;
 playaStunned = false;
 playaStunnedTime = 0;
